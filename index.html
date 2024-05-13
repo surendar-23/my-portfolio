@@ -200,22 +200,32 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form>
+            <form action="./send-email.php" method="post">
               <div class="mb-3">
                 <label class="form-label">Name</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" name="name" required />
               </div>
               <div class="mb-3">
                 <label class="form-label">Mobile</label>
-                <input type="number" class="form-control" />
+                <input type="tel" class="form-control" name="mobile" required />
               </div>
               <div class="mb-3">
                 <label class="form-label">Email address</label>
-                <input type="email" class="form-control" />
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label class="form-label">Message</label>
-                <textarea rows="5" class="form-control"></textarea>
+                <textarea
+                  rows="5"
+                  class="form-control"
+                  name="message"
+                  required
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
